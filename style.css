@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+:root {
+
+  --family: 'Outfit', sans-serif;
+  --fs: 15px;
+  --fw-regular: 400;
+  --fw-bold: 700;
+
+  --white: hsl(0, 0%, 100%);
+  --light-gray: hsl(212, 45%, 89%);
+  --grayish-blue: hsl(220, 15%, 55%);
+  --dark-blue: hsl(218, 44%, 22%);
+  --shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+
+  --radius: 1rem;
+  --radius-img: 0.5rem;
+
+  --mobile: 376px;
+}
+
+body {
+  max-width: 1440px;
+  margin: 0 auto;
+  font-family: var(--family);
+  font-weight: var(--fw-regular);
+  color: var(--grayish-blue);
+  background-color: var(--light-gray);
+}
+
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.card_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  min-height: 100%;
+  gap: 1rem;
+  min-height: 90vh;
+  padding-top: 1rem;
+}
+
+.card {
+  width: 250px;
+  background-color: var(--white);
+  box-shadow: var(--shadow);
+  border-radius: var(--radius);
+  padding: 0.75rem;
+}
+
+.card__img {
+  overflow: hidden;
+  border-radius: var(--radius-img);
+  width: 100%;
+}
+
+.card__title {
+  color: var(--dark-blue);
+  text-align: center;
+}
+
+.card__info {
+  font-size: small;
+  text-align: center;
+}
+
+footer>p {
+  font-size: small;
+  text-align: center;
+  margin-right: 0.5rem;
+}
+
+@media (min-width: 376px) {
+  footer {
+    display: flex;
+  }
+}
