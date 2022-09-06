@@ -30,17 +30,13 @@ body {
   font-weight: var(--fw-regular);
   color: var(--grayish-blue);
   background-color: var(--light-gray);
-}
-
-.wrapper {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  flex-direction: column;
-  min-height: 100vh;
 }
 
-.card_container {
+.card__container {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -57,6 +53,10 @@ body {
   box-shadow: var(--shadow);
   border-radius: var(--radius);
   padding: 0.75rem;
+}
+
+.card h1 {
+  font-size: 18px;
 }
 
 .card__img {
